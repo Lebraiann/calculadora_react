@@ -25,6 +25,9 @@ function App() {
 
   return (
     <div style={styles.container}>
+      <div>
+        <h1 style={styles.header}>Calculadora :D</h1>
+      </div>
       <div style={styles.calculator}>
         <input type="text" value={input} readOnly style={styles.display} />
         <div style={styles.buttonContainer}>
@@ -96,10 +99,16 @@ function App() {
 const styles = {
   container: {
     display: "flex",
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     height: "100vh",
     backgroundColor: "#f4f4f4",
+  },
+  header: {
+    fontSize: "24px",
+    marginBottom: "20px",
+    color: "#333",
   },
   calculator: {
     border: "2px solid #ccc",
